@@ -1,14 +1,13 @@
-# required modules
+# install and import the required modules
 from turtle import *
 from random import randint
 
-# classic shape turtle
+# using the normal shape for turtle
 speed(0)
 penup()
 goto(-140, 140)
 
-# racing track
-
+# race track for turtles
 for step in range(15):
     write(step, align='center')
     right(90)
@@ -24,65 +23,65 @@ for step in range(15):
     left(90)
     forward(20)
 
-# first player details
+# first turtle details
 player_1 = Turtle()
 player_1.color('red')
 player_1.shape('turtle')
 
-# first player proceeds to racing track
+# first turtle going to race track
 player_1.penup()
 player_1.goto(-160, 100)
 player_1.pendown()
 
-# 360 degree turn
+# 360 degree turn on right side
 for turn in range(10):
     player_1.right(36)
 
-# second player details
+# second turtle details
 player_2 = Turtle()
 player_2.color('blue')
 player_2.shape('turtle')
 
-# second player enters in the racing track
+# second turtle going to race track
 player_2.penup()
 player_2.goto(-160, 70)
 player_2.pendown()
 
-# 360 degree turn
+# 360 degree turn on left side
 for turn in range(72):
     player_2.left(5)
 
-# third player details
+# third turtle details
 player_3 = Turtle()
 player_3.shape('turtle')
 player_3.color('green')
 
-# third player enters in the racing track
+# third turtle going to race track
 player_3.penup()
 player_3.goto(-160, 40)
 player_3.pendown()
 
-# 360 degree turn
+# 360 degree turn on right side
 for turn in range(60):
     player_3.right(6)
 
-# fourth player details
+# fourth turtle details
 player_4 = Turtle()
 player_4.shape('turtle')
 player_4.color('orange')
 
-# fourth player enters in the racing track
+# fourth turtle going to race track
 player_4.penup()
 player_4.goto(-160, 10)
 player_4.pendown()
 
-# 360 degree turn
+# 360 degree turn on left side
 for turn in range(30):
     player_4.left(12)
 
-# turtles run at random speeds
+# turtles running at random speeds
 for turn in range(100):
-    player_1.forward(randint(1, 5))
-    player_2.forward(randint(1, 5))
-    player_3.forward(randint(1, 5))
-    player_4.forward(randint(1, 5))
+    player_1.forward(randint(1, 6))
+    player_2.forward(randint(1, 6))
+    player_3.forward(randint(1, 6))
+    player_4.forward(randint(1, 6))
